@@ -32,7 +32,9 @@ let string = document.getElementById("string")
 //console.log(string)
 
 function save() {
-    countS = countEl.innerText
-    string.innerText = string.innerText + " " + countS + " - "
+    countS = countEl.textContent
+    string.textContent = string.textContent + " " + countS + " - "
+    countEl.innerText = 0
+    count = 0
 }
 
